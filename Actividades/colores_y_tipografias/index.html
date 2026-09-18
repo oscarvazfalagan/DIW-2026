@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pan y Trigo — Plantilla de práctica</title>
+
+  <!-- Tipografías de Google Fonts: cambia estos nombres por otras que quieras
+       probar. Busca más en https://fonts.google.com y sustituye tanto el
+       enlace de aquí como las variables --font-heading / --font-body en
+       styles.css -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- ===================== CABECERA ===================== -->
+  <header class="cabecera">
+    <div class="contenedor cabecera__interior">
+      <p class="marca">Pan y Trigo</p>
+        <nav class="navegacion" aria-label="Navegación principal">
+          <ul>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>      
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="contenedor hero__contenido">
+        <h1>Pan recién horneado, cada mañana</h1>
+        <p class="hero__texto">
+          Elaboramos pan y repostería de forma artesanal, con harinas de
+          molienda lenta y fermentación natural. Sin prisas, sin atajos.
+        </p>
+        <div class="hero__acciones">
+          <button class="boton boton--primario">Ver el menú</button>
+          <button class="boton boton--secundario">Cómo llegar</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== BLOQUES / TARJETAS ===================== -->
+    <section id="productos" class="seccion seccion--alterna">
+      <div class="contenedor">
+        <h2>Lo que preparamos</h2>
+        <div class="rejilla-tarjetas">
+
+          <article class="tarjeta">
+            <h3>Pan artesanal</h3>
+            <p>
+              Barras y hogazas de fermentación lenta, horneadas en piedra
+              todas las mañanas antes del amanecer.
+            </p>
+            <button class="boton boton--primario">Ver variedades</button>
+          </article>
+
+          <article class="tarjeta">
+            <h3>Repostería</h3>
+            <p>
+              Bollería, tartas y dulces de temporada, hechos con
+              ingredientes locales siempre que es posible.
+            </p>
+            <button class="boton boton--primario">Ver catálogo</button>
+          </article>
+
+          <article class="tarjeta">
+            <h3>Catering</h3>
+            <p>
+              Mesas dulces y saladas para eventos, adaptadas al número de
+              invitados y a la ocasión.
+            </p>
+            <button class="boton boton--primario">Solicitar presupuesto</button>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SOBRE NOSOTROS ===================== -->
+    <section id="nosotros" class="seccion">
+      <div class="contenedor seccion__dos-columnas">
+        <div>
+          <h2>Sobre nosotros</h2>
+          <p>
+            Somos un obrador familiar con más de veinte años de oficio.
+            Creemos en los tiempos largos de fermentación y en trabajar con
+            productores de la zona.
+          </p>
+        </div>
+        <aside class="destacado">
+          <p>
+            &ldquo;Horneamos como se hacía antes: con paciencia y buenas
+            materias primas.&rdquo;
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACTO ===================== -->
+    <section id="contacto" class="seccion seccion--alterna">
+      <div class="contenedor seccion--centrada">
+        <h2>Visítanos</h2>
+        <p>Calle del Horno, 12 · Abierto de martes a domingo, 7:00–14:00</p>
+        <button class="boton boton--primario">Hacer un pedido</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== PIE DE PÁGINA ===================== -->
+  <footer class="pie">
+    <div class="contenedor">
+      <p>&copy; 2026 Pan y Trigo. Plantilla de práctica de diseño web.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

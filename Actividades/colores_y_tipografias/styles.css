@@ -1,0 +1,333 @@
+/* ==========================================================================
+   PLANTILLA DE PRÁCTICA — colores y tipografía
+
+   Todo lo que necesitas cambiar para experimentar con una paleta o una
+   tipografía distinta está reunido aquí arriba, en :root. El resto de la
+   hoja de estilos NO se toca: usa estas variables con var(--nombre),
+   así que basta con cambiar un valor aquí para que se actualice en toda
+   la página.
+
+   Herramientas útiles para elegir paleta:
+     - https://coolors.co
+     - https://colorhunt.co
+     - https://color.adobe.com
+
+   Herramientas útiles para elegir tipografía:
+     - https://fonts.google.com  (recuerda actualizar también el <link>
+       en el <head> del archivo index.html si cambias de tipografía)
+     - https://fontpair.co (para ver combinaciones de dos tipografías)
+   ========================================================================== */
+
+:root {
+
+  /* ---- 1. COLOR DE FONDO GENERAL ----
+     El fondo de la página y de las secciones "normales". */
+  --color-fondo: #fcfaf6;
+
+  /* ---- 2. COLOR DE FONDO ALTERNO ----
+     Para secciones que quieres diferenciar del fondo general
+     (ver clase .seccion--alterna en el HTML). */
+  --color-fondo-alterno: #F0EBE1;
+
+  /* ---- 3. COLOR DE FONDO DE BLOQUES / TARJETAS ----
+     El fondo de las tarjetas de producto y del bloque destacado. */
+  --color-bloque: #FFFFFF;
+  --color-bloque-borde: #E4DCCB;
+
+  /* ---- 4. COLOR DE TEXTO ----
+     Texto principal y texto secundario (más apagado, para descripciones). */
+  --color-texto: #2B2620;
+  --color-texto-secundario: #6B6255;
+
+  /* ---- 5. COLOR DE BOTONES ----
+     Botón primario (la acción principal) y su estado al pasar el ratón,
+     más el botón secundario (acción menos importante). */
+  --color-boton-primario: #2F6F4F;
+  --color-boton-primario-hover: #24573E;
+  --color-boton-texto: #FFFFFF;
+
+  --color-boton-secundario: transparent;
+  --color-boton-secundario-borde: #2B2620;
+  --color-boton-secundario-texto: #2B2620;
+
+  /* ---- 6. COLOR DE ACENTO ----
+     Úsalo con moderación: un detalle, no todo el fondo. Aquí se usa en el
+     borde izquierdo del bloque destacado ("aside"). */
+  --color-acento: #C68A2E;
+
+  /* ---- 7. TIPOGRAFÍA ----
+     --font-titulos se usa en h1, h2, h3.
+      - 'Fraunces' (Primera opción): Fuente moderna con remates (serif). Si está
+        importad vía Google Fonts o @font-face, el navegador la usará como prioridad.
+      - Georgia (Reserva del sistema): Si 'Fraunces' falla o aún no se he descargado,
+        usará Georgia, una fuente muy extendida y presente por defectoen casi todos 
+        los sistemas (Windows, macOS, iOS).
+      - serif (Reserva genérica): Si ninguna de las dos anteriores está disponible, 
+        el sistema cargará su fuente serif predeterminada (como Times New Roman).
+
+     --font-cuerpo se usa en párrafos, botones y menú.
+      - 'Inter' (Primera opción): Una de las fuentes web sans-serif más populares 
+        para interfaces UI por su excelente legibilidad en pantallas pequeñas.
+      - system-ui (Reserva de sistema nativa): Si 'Inter' no está disponible, el 
+        navegador recurrirá a la tipografía por defecto del sistema operativo del 
+        usuario (por ejemplo, San Francisco en iOS/macOS, Segoe UI en Windows o 
+        Roboto en Android).
+      - sans-serif (Reserva genérica): La categoría genérica sin remates de último 
+        recurso (como Arial o Helvetica).
+     Si cambias de tipografía, actualiza también el <link> de Google Fonts
+     en el <head> de index.html. */
+  --font-titulos: 'Fraunces', Georgia, serif;
+  --font-cuerpo: 'Inter', system-ui, sans-serif;
+
+  /* Tamaño base del texto; los demás tamaños están definidos en "em",
+     así que cambiar este valor escala toda la tipografía proporcionalmente. */
+  --tamano-base: 17px;
+}
+
+
+
+/* ==========================================================================
+   ESTILOS BASE
+   ========================================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  font-family: var(--font-cuerpo);
+  font-size: var(--tamano-base);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-titulos);
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 0 0.5em;
+}
+
+h1 { font-size: 2.75em; font-weight: 700; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.25em; }
+
+p {
+  color: var(--color-texto-secundario);
+  max-width: 65ch;
+}
+
+.contenedor {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ==========================================================================
+   CABECERA Y NAVEGACIÓN
+   ========================================================================== */
+
+.cabecera {
+  background-color: var(--color-fondo);
+  border-bottom: 1px solid var(--color-bloque-borde);
+  position: sticky;
+  top: 0;
+}
+
+.cabecera__interior {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.marca {
+  font-family: var(--font-titulos);
+  font-weight: 600;
+  font-size: 1.25em;
+  margin: 0;
+  color: var(--color-texto);
+}
+
+.navegacion ul {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.navegacion a {
+  color: var(--color-texto);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navegacion a:hover {
+  color: var(--color-boton-primario);
+}
+
+/* ==========================================================================
+   HERO
+   ========================================================================== */
+
+.hero {
+  padding: 96px 0;
+}
+
+.hero__contenido {
+  max-width: 640px;
+}
+
+.hero__texto {
+  font-size: 1.15em;
+}
+
+.hero__acciones {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+/* ==========================================================================
+   BOTONES
+   ========================================================================== */
+
+.boton {
+  font-family: var(--font-cuerpo);
+  font-size: 0.95em;
+  font-weight: 600;
+  padding: 14px 28px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.boton--primario {
+  background-color: var(--color-boton-primario);
+  color: var(--color-boton-texto);
+  border: 1px solid var(--color-boton-primario);
+}
+
+.boton--primario:hover {
+  background-color: var(--color-boton-primario-hover);
+  border-color: var(--color-boton-primario-hover);
+}
+
+.boton--secundario {
+  background-color: var(--color-boton-secundario);
+  color: var(--color-boton-secundario-texto);
+  border: 1px solid var(--color-boton-secundario-borde);
+}
+
+.boton--secundario:hover {
+  background-color: var(--color-boton-secundario-borde);
+  color: var(--color-fondo);
+}
+
+/* ==========================================================================
+   SECCIONES
+   ========================================================================== */
+
+.seccion {
+  padding: 80px 0;
+}
+
+.seccion--alterna {
+  background-color: var(--color-fondo-alterno);
+}
+
+.seccion--centrada {
+  text-align: center;
+}
+
+.seccion--centrada p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.seccion__dos-columnas {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+/* ==========================================================================
+   TARJETAS (bloques de producto)
+   ========================================================================== */
+
+.rejilla-tarjetas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.tarjeta {
+  background-color: var(--color-bloque);
+  border: 1px solid var(--color-bloque-borde);
+  border-radius: 10px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.tarjeta .boton {
+  margin-top: auto;
+}
+
+/* Bloque destacado (cita), con el color de acento como detalle en el borde */
+.destacado {
+  background-color: var(--color-bloque);
+  border-left: 4px solid var(--color-acento);
+  padding: 24px 28px;
+  font-family: var(--font-titulos);
+  font-size: 1.1em;
+}
+
+.destacado p {
+  color: var(--color-texto);
+  margin: 0;
+}
+
+/* ==========================================================================
+   PIE DE PÁGINA
+   ========================================================================== */
+
+.pie {
+  background-color: var(--color-fondo-alterno);
+  padding: 32px 0;
+}
+
+.pie p {
+  font-size: 0.875em;
+  margin: 0;
+}
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  .rejilla-tarjetas {
+    grid-template-columns: 1fr;
+  }
+
+  .seccion__dos-columnas {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 2.1em;
+  }
+
+  .navegacion ul {
+    gap: 20px;
+  }
+}
