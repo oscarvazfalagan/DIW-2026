@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coruña DTS</title>
+
+  <!-- Tipografías de Google Fonts: cambia estos nombres por otras que quieras
+      probar. Busca más en https://fonts.google.com y sustituye tanto el
+      enlace de aquí como las variables --font-heading / --font-body en
+      styles.css -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+
+
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- ===================== CABECERA ===================== -->
+  <header class="cabecera">
+    <div class="contenedor cabecera__interior">
+      <p class="marca">Coruña DTS</p>
+        <nav class="navegacion" aria-label="Navegación principal">
+          <ul>
+            <li><a href="#productos">Servicios</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>      
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="contenedor hero__contenido">
+        <h1>Coruña Departamento Seguridad Tecnologica</h1>
+        <p class="hero__texto">
+          Nos dedicamos a la seguridad de la información y la proteccion de datos, ofreciendo servicios remotos a empresas y particulares.
+        </p>
+        <div class="hero__acciones">
+          <button class="boton boton--primario">Contratar servicio</button>
+          <button class="boton boton--secundario">Contactar</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== BLOQUES / TARJETAS ===================== -->
+    <section id="productos" class="seccion seccion--alterna">
+      <div class="contenedor">
+        <h2>Servicios a ofrecer</h2>
+        <div class="rejilla-tarjetas">
+
+          <article class="tarjeta">
+            <h3>Seguridad Informática</h3>
+            <p>
+              Servicios de protección y mantenimiento de sistemas informáticos,
+              garantizando la integridad y disponibilidad de los datos.
+            </p>
+            <button class="boton boton--primario">Saber más</button>
+          </article>
+
+          <article class="tarjeta">
+            <h3>Redes y Comunicaciones</h3>
+            <p>
+              Servicios de diseño, implementación y mantenimiento de redes
+              informáticas, asegurando la conectividad y el rendimiento
+              óptimo.
+            </p>
+            <button class="boton boton--primario">Saber más</button>
+          </article>
+
+          <article class="tarjeta">
+            <h3>Instalación y Mantenimiento</h3>
+            <p>
+              Servicios de instalación y mantenimiento de sistemas informáticos,
+              garantizando su correcto funcionamiento y actualizaciones.
+            </p>
+            <button class="boton boton--primario">Saber más</button>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SOBRE NOSOTROS ===================== -->
+    <section id="nosotros" class="seccion">
+      <div class="contenedor seccion__dos-columnas">
+        <div>
+          <h2>Sobre nosotros</h2>
+          <p>
+            Coruña DTS es un equipo de profesionales que se dedica a la seguridad de la información y protección de datos
+            ofreciendo servicios de buena calidad a empresas y particulares.Nos especializamos en la seguridad informática, redes y comunicaciones,
+            así como en la instalación y mantenimiento de sistemas informáticos.
+          </p>
+        </div>
+        <aside class="destacado">
+          <p>
+            &ldquo; Defendemos a pequeñas y grandes productoras de la zona. &rdquo;
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACTO ===================== -->
+    <section id="contacto" class="seccion seccion--alterna">
+      <div class="contenedor seccion--centrada">
+        <h2>Solicitar información</h2>
+        <p> Carrretera Manuel Azaña · Abierto de martes a domingo, 7:00–14:00</p>
+        <button class="boton boton--primario">Contactar</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== PIE DE PÁGINA ===================== -->
+  <footer class="pie">
+    <div class="contenedor">
+      <p>&copy; 2026 Coruña Departamento Seguridad Tecnologica.Plantilla de práctica de diseño web.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

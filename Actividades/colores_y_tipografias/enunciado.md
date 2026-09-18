@@ -33,7 +33,7 @@ Sustituye los valores hexadecimales de estas variables por los de tu paleta y gu
 
 3. Elige la tipografía
 
-Entra en [Google Fonts](https://fonts.google.com) y elige dos tipografías: una para los títulos (--font-titulos) y otra para el cuerpo del texto (--font-cuerpo). Deben ser tipografías distintas entre sí, pero que combinen bien — por ejemplo, una tipografía con carácter para los títulos junto con una tipografía sencilla y muy legible para el cuerpo.
+Entra en [Google Fonts](https://fonts.google.113136com) y elige dos tipografías: una para los títulos (--font-titulos) y otra para el cuerpo del texto (--font-cuerpo). Deben ser tipografías distintas entre sí, pero que combinen bien — por ejemplo, una tipografía con carácter para los títulos junto con una tipografía sencilla y muy legible para el cuerpo.
 
 Para aplicarlas correctamente tienes que cambiar dos sitios, no solo uno:
 

@@ -22,41 +22,42 @@
 
   /* ---- 1. COLOR DE FONDO GENERAL ----
      El fondo de la página y de las secciones "normales". */
-  --color-fondo: #fcfaf6;
+  --color-fondo: #B6B4B5;
 
   /* ---- 2. COLOR DE FONDO ALTERNO ----
-     Para secciones que quieres diferenciar del fondo general
+    Para secciones que quieres diferenciar del fondo general
      (ver clase .seccion--alterna en el HTML). */
-  --color-fondo-alterno: #F0EBE1;
+  --color-fondo-alterno: #626870;
 
   /* ---- 3. COLOR DE FONDO DE BLOQUES / TARJETAS ----
      El fondo de las tarjetas de producto y del bloque destacado. */
-  --color-bloque: #FFFFFF;
-  --color-bloque-borde: #E4DCCB;
+  --color-bloque: #38424D;
+  --color-bloque-borde: #0D1B2A;
 
   /* ---- 4. COLOR DE TEXTO ----
      Texto principal y texto secundario (más apagado, para descripciones). */
-  --color-texto: #2B2620;
-  --color-texto-secundario: #6B6255;
+  --color-texto: #113136;
+  --color-texto-secundario: #000000;
+  --color-texto-destacado: #778CA2;
 
   /* ---- 5. COLOR DE BOTONES ----
-     Botón primario (la acción principal) y su estado al pasar el ratón,
+    Botón primario (la acción principal) y su estado al pasar el ratón,
      más el botón secundario (acción menos importante). */
-  --color-boton-primario: #2F6F4F;
-  --color-boton-primario-hover: #24573E;
+  --color-boton-primario: #415A77;
+  --color-boton-primario-hover: #1B263B;
   --color-boton-texto: #FFFFFF;
 
   --color-boton-secundario: transparent;
-  --color-boton-secundario-borde: #2B2620;
-  --color-boton-secundario-texto: #2B2620;
+  --color-boton-secundario-borde: #213136;
+  --color-boton-secundario-texto: #213136;
 
   /* ---- 6. COLOR DE ACENTO ----
-     Úsalo con moderación: un detalle, no todo el fondo. Aquí se usa en el
+    Úsalo con moderación: un detalle, no todo el fondo. Aquí se usa en el
      borde izquierdo del bloque destacado ("aside"). */
-  --color-acento: #C68A2E;
+  --color-acento: #C1CC74;
 
   /* ---- 7. TIPOGRAFÍA ----
-     --font-titulos se usa en h1, h2, h3.
+    --font-titulos se usa en h1, h2, h3.
       - 'Fraunces' (Primera opción): Fuente moderna con remates (serif). Si está
         importad vía Google Fonts o @font-face, el navegador la usará como prioridad.
       - Georgia (Reserva del sistema): Si 'Fraunces' falla o aún no se he descargado,
@@ -65,7 +66,7 @@
       - serif (Reserva genérica): Si ninguna de las dos anteriores está disponible, 
         el sistema cargará su fuente serif predeterminada (como Times New Roman).
 
-     --font-cuerpo se usa en párrafos, botones y menú.
+    --font-cuerpo se usa en párrafos, botones y menú.
       - 'Inter' (Primera opción): Una de las fuentes web sans-serif más populares 
         para interfaces UI por su excelente legibilidad en pantallas pequeñas.
       - system-ui (Reserva de sistema nativa): Si 'Inter' no está disponible, el 
@@ -74,10 +75,10 @@
         Roboto en Android).
       - sans-serif (Reserva genérica): La categoría genérica sin remates de último 
         recurso (como Arial o Helvetica).
-     Si cambias de tipografía, actualiza también el <link> de Google Fonts
+    Si cambias de tipografía, actualiza también el <link> de Google Fonts
      en el <head> de index.html. */
-  --font-titulos: 'Fraunces', Georgia, serif;
-  --font-cuerpo: 'Inter', system-ui, sans-serif;
+  --font-titulos: 'Merriweather', Georgia, serif;
+  --font-cuerpo: 'DM Sans', system-ui, sans-serif;
 
   /* Tamaño base del texto; los demás tamaños están definidos en "em",
      así que cambiar este valor escala toda la tipografía proporcionalmente. */
@@ -87,7 +88,7 @@
 
 
 /* ==========================================================================
-   ESTILOS BASE
+  ESTILOS BASE
    ========================================================================== */
 
 * {
@@ -113,6 +114,7 @@ h1, h2, h3 {
 h1 { font-size: 2.75em; font-weight: 700; }
 h2 { font-size: 2em; }
 h3 { font-size: 1.25em; }
+h3 { color: var(--color-texto-destacado);}
 
 p {
   color: var(--color-texto-secundario);
@@ -164,7 +166,7 @@ p {
   color: var(--color-texto);
   text-decoration: none;
   font-weight: 500;
-}
+}destaca
 
 .navegacion a:hover {
   color: var(--color-boton-primario);
@@ -292,7 +294,7 @@ p {
 }
 
 .destacado p {
-  color: var(--color-texto);
+  color: var(--color-texto-destacado);
   margin: 0;
 }
 
