@@ -1,0 +1,122 @@
+/* ===================== ESTILOS BASE ===================== */
+
+body {
+  font-family: system-ui, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+  line-height: 1.5;
+  color: #222;
+}
+
+h1 { font-size: 1.8em; }
+
+h2 {
+  font-size: 1.3em;
+  margin-top: 2em;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 4px;
+}
+
+section { margin-bottom: 2em; }
+
+/* ===================== 1. BARRA DE ICONOS ===================== */
+
+.barra-iconos {
+  display: flex;
+  gap: 16px;
+}
+
+.icono {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  color: #333;
+  font-size: 1.2em; /* tamaño de TODOS los iconos: cámbialo aquí para afectarlos a todos por igual */
+  text-decoration: none;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.icono:hover {
+  background-color: #2F6F4F;
+  color: #ffffff;
+}
+
+/* ===================== 2. REGLA DE LOS TERCIOS ===================== */
+
+.galeria-tercios {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.galeria-tercios figure {
+  margin: 0;
+  max-width: 320px;
+}
+
+/* Este div envuelve SOLO la imagen: la rejilla debe cubrir exactamente el
+   área de la foto, sin extenderse sobre el pie de foto de debajo. */
+.marco-tercios {
+  position: relative;
+  line-height: 0; /* evita un hueco extra debajo de la imagen */
+}
+
+.marco-tercios img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Rejilla de la regla de los tercios, dibujada solo con CSS (sin necesitar
+   una imagen aparte): dos líneas verticales y dos horizontales que dividen
+   el marco en 3x3 partes iguales. */
+.marco-tercios::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(to right,
+      transparent calc(33.333% - 1px), red calc(33.333% - 1px), red calc(33.333% + 1px), transparent calc(33.333% + 1px),
+      transparent calc(66.666% - 1px), red calc(66.666% - 1px), red calc(66.666% + 1px), transparent calc(66.666% + 1px)),
+    linear-gradient(to bottom,
+      transparent calc(33.333% - 1px), red calc(33.333% - 1px), red calc(33.333% + 1px), transparent calc(33.333% + 1px),
+      transparent calc(66.666% - 1px), red calc(66.666% - 1px), red calc(66.666% + 1px), transparent calc(66.666% + 1px));
+  opacity: 0.6;
+}
+
+.marco-tercios figcaption {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 6px;
+}
+
+/* ===================== 3. ÁNGULOS FOTOGRÁFICOS ===================== */
+
+.galeria-angulos {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.galeria-angulos figure {
+  max-width: 280px;
+  margin: 0;
+}
+
+.galeria-angulos img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.galeria-angulos select {
+  margin: 8px 0;
+  padding: 4px;
+}

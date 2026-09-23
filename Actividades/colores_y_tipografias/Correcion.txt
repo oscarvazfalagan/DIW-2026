@@ -1,0 +1,14 @@
+Alejandro :
+    En cuanto a la paleta segura, los colores elejidos algunos pueden llegar
+    a ser algo mas extridentes de lo normal,las tipografias se entrelazan bien
+    entre si pero los titulos no destacan por el tipo de letra redondeada.
+    La paleta de contrastes esta casi toda bien ejecutada menos un titulo en verde
+    que se encuentra sobre otro titulo en verde.
+
+Diego :
+    En cuanto a la paleta segura tanto los colores como las letras elegidas se
+    entrelazan bastante bien los colores en la escala de brillos estan bien
+    selecionados.
+    La paleta de colores de altro constante sin embargo me parece que tiene
+    algunas letras que en el tono mas claro no contrastan tan bien mientras 
+    que en el marron mas oscuro si que contrastan correctamente.

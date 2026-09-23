@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Práctica: iconos e imágenes</title>
+
+  <!-- Font Awesome: fuente de iconos vectoriales gratuita (ver apartado 8.1 del tema) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <h1>Práctica: iconos y composición de imágenes</h1>
+
+  <!-- ===================== 1. BARRA DE ICONOS ===================== -->
+  <section>
+    <h2>1. Barra de iconos</h2>
+    <p>
+      Todos los iconos deben tener el mismo tamaño y estilo, y una alternativa
+      de texto para las personas que no puedan verlos (apartado 8.2 del tema).
+    </p>
+
+    <nav class="barra-iconos">
+      <a href="#" class="icono" aria-label="Inicio">
+        <i class="fa-solid fa-house" aria-hidden="true"></i>
+      </a>
+      <a href="#" class="icono" aria-label="Buscar">
+        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+      </a>
+      <a href="#" class="icono" aria-label="Carrito de la compra">
+        <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+      </a>
+      <a href="#" class="icono" aria-label="Nuestro GitHub">
+        <i class="fa-brands fa-github" aria-hidden="true"></i>
+      </a>
+      <a href="#" class="icono" aria-label="Nuestro Facebook">
+        <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+      </a>
+      <a href="#" class="icono" aria-label="Nuestro Instagram">
+        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+      </a>
+
+      <!-- TODO 1: añade aquí al menos 2 iconos más.
+           Busca su nombre de clase en https://fontawesome.com/icons
+           (usa solo iconos marcados como "Free").
+           Mantén siempre el mismo formato: <a> + aria-label + <i> -->
+
+    </nav>
+  </section>
+
+  <!-- ===================== 2. REGLA DE LOS TERCIOS ===================== -->
+  <section>
+    <h2>2. Regla de los tercios</h2>
+    <p>
+      La rejilla roja marca los "puntos de fuerza" de cada imagen (ver
+      apartado 9 del tema). Sustituye las dos imágenes de ejemplo por otras
+      tuyas y comprueba si el sujeto principal cae cerca de alguno de esos
+      puntos.
+    </p>
+
+    <div class="galeria-tercios">
+      <figure>
+        <div class="marco-tercios">
+          <img
+            src="https://www.billboard.com/wp-content/uploads/2023/11/Duki-cr-Dale-Play-Records-press-2023-billboard-1548.jpg"
+            alt="Imagen de ejemplo 1, sustitúyela por la tuya">
+          <!-- TODO 2a: cambia el src de esta imagen por una tuya propia -->
+        </div>
+        <figcaption>
+          ¿El sujeto principal está en un punto de fuerza? ¿Sí o no? ¿Por qué?
+
+          <br> Se encuentra entre los dos puntos de fuerza, de la zona derecha, por lo tanto nuestra atención se centra
+          en enfocar en este caso al cantate Duki, la imagen esta compuesta pa fijar nuestra atencion ahi
+        </figcaption>
+      </figure>
+
+      <figure>
+        <div class="marco-tercios">
+          <img
+            src="https://preview.redd.it/and-here-is-ffvii-remakes-new-key-visual-in-1920x1080-v0-3daagjald2dy.jpg?width=1080&crop=smart&auto=webp&s=237187eedf550f04ba205d152132d651b7f3a3ce"
+            alt="Imagen de ejemplo 2, sustitúyela por la tuya">
+          <!-- TODO 2b: cambia el src de esta imagen por otra tuya -->
+        </div>
+        <figcaption>
+          ¿El sujeto principal está en un punto de fuerza? ¿Sí o no? ¿Por qué?
+          <br> En este caso el sujeto principal se encuentra en el punto de fueza superior de la zona izquierda, por lo
+          tanto nuestra atencion se centra en el personaje de Cloud.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===================== 3. ÁNGULOS FOTOGRÁFICOS ===================== -->
+  <section>
+    <h2>3. Ángulos fotográficos</h2>
+    <p>
+      Para cada imagen, indica qué ángulo crees que se ha usado (normal,
+      contrapicado, picado, nadir o cenital) y en qué tipo de página web lo
+      usarías.
+    </p>
+
+    <div class="galeria-angulos">
+      <figure>
+        <img src="https://picsum.photos/seed/angulo1/500/350"
+          alt="Imagen de ejemplo para identificar el ángulo, sustitúyela por la tuya">
+        <figcaption>
+          <label>Ángulo:
+            <select>
+              <option value="">Normal</option>
+              <option>Contrapicado</option>
+              <option>Picado</option>
+              <option>Nadir</option>
+              <option>Cenital</option>
+            </select>
+          </label>
+          <p>¿En qué tipo de web usarías este ángulo, y por qué?</p>
+          <br> En este caso el angulo es normal, ya que la camara esta enfocando al sujeto de frente,
+          Este angulo podria usarse en cualquier tipo de web, ya que da la sensacion de que el sujeto es normal y no
+          tiene ninguna caracteristica especial.
+        </figcaption>
+      </figure>
+      <div class="galeria-angulos">
+        <figure>
+          <img src="https://historiadelcine.es/wp-content/uploads/2020/04/plano-picado.jpg"
+            alt="Imagen de ejemplo para identificar el ángulo, sustitúyela por la tuya">
+          <figcaption>
+            <label>Ángulo:
+              <select>
+                <option value="">Picado</option>
+                <option>Normal</option>
+                <option>Contrapicado</option>
+                <option>Nadir</option>
+                <option>Cenital</option>
+              </select>
+            </label>
+            <p>¿En qué tipo de web usarías este ángulo, y por qué?</p>
+            <br> En este caso el angulo es picado, ya que la camara esta enfocando al sujeto desde arriba, dando la
+            sensacion de que el sujeto es pequeño y vulnerable.
+            Este angulo podria usarse en foros sobre miedos o testimonios de personas que han pasado por situaciones
+            dificiles, ya que da la sensacion de que el sujeto es vulnerable y necesita ayuda.
+          </figcaption>
+        </figure>
+        <div class="galeria-angulos">
+          <figure>
+            <img src="https://i.redd.it/gzll0bsc1cmc1.jpeg"
+              alt="Imagen de ejemplo para identificar el ángulo, sustitúyela por la tuya">
+            <figcaption>
+              <label>Ángulo:
+                <select>
+                  <option value="">Contrapicado</option>
+                  <option>Normal</option>
+                  <option>Picado</option>
+                  <option>Nadir</option>
+                  <option>Cenital</option>
+                </select>
+              </label>
+              <p>¿En qué tipo de web usarías este ángulo, y por qué?</p>
+              <br>En este caso el angulo es contrapicado, ya que la camara esta enfocanco el reactor como algo
+              imponente,
+              Este angulo podria usarse en web corporativa de una empresa de tecnologia, ya que da la sensacion de que
+              la empresa es imponente y fuerte.
+            </figcaption>
+          </figure>
+
+          <!-- TODO 3: duplica este bloque <figure> dos veces más, con dos
+           imágenes propias que muestren ángulos distintos entre sí -->
+        </div>
+
+  </section>
+
+  <!-- ===================== 4. REFLEXIÓN FINAL ===================== -->
+  <section>
+    <h2>4. Reflexión final</h2>
+    <p>
+      La fuente de iconos es mas ligera que las imagenes por lo tanto optimiza la carga de la web, ademas de que es mas
+      facil de mantener y actualizar,ademas de que se pueden escalar sin perder calidad y a la vez muchos son muy
+      reconocibles, por
+      lo que ayudan a la navegacion en la web.
+    </p>
+  </section>
+
+</body>
+
+</html>
