@@ -38,35 +38,61 @@ h3 {
 /* 7. Selector hijo directo: aplica un margen a los elementos li que sean hijos directos de la lista del menú nav. */
 nav > li {
   margin: 50;
+  text-decoration: none;
 }
 /* 8. Selector de hermanos adyacentes: establece un margen superior para el primer article que aparezca inmediatamente después de un h2. */
-
+article :first-of-type {
+  margin-top: 50px;
+}
 /* 9. Selector de hermanos generales: cambia el color de los párrafos que sean hermanos posteriores de un h3.*/
-
+h3 ~ p {
+  color: green;
+}
 /*C. SELECTORES DE ATRIBUTOS*/
 
 /* 10. Selecciona todos los enlaces que tengan el atributo href y establece su color en azul.*/
-
+a[href] {
+  color: blue;
+}
 /* 11. Selecciona los enlaces cuyo href comience por https y añade un borde inferior.*/
-
+a[href^="https"] {
+  border-bottom: 20px green solid;
+}
 /*12. Selecciona los enlaces cuyo href contenga la palabra mailto y cambia su color.*/
-
+a[href*="mailto"] {
+  color: brown;
+}
 /* D. PSEUDOCLASES */
 
 /* 13. :hover: cuando el ratón pase sobre un enlace, cambia su color y elimina el subrayado.*/
-
+a:hover {
+  color: blueviolet;
+  text-decoration: none;
+}
 /* 14. :active: mientras se pulsa un enlace, cambia su fondo.*/
-
+a:active {
+  background-color: #ff0000;
+}
 /* 15. :visited: los enlaces visitados deben tener otro color. */
-
+a:visited {
+  color: coral;
+}
 /* 16. :first-child: aplica negrita al primer elemento de cada lista. */
-
+li:first-child {
+  font-weight: bold;
+}
 /* 17. :last-child: aplica un borde inferior al último elemento de cada lista.*/
-
+li:last-child {
+  border-bottom: solid black 10px;
+}
 /* 18. :nth-child(2): aplica un fondo diferente al segundo elemento de la lista (article) de noticias. */
-
+article.noticias:nth-child(2) {
+  background-color: aqua;
+}
 /* 19. :not(.destacado): aplica un borde a todos los ciclos que no tengan la clase destacado.*/
-
+.destacado {
+  border: solid;
+}
 /* 20. :focus: cuando un enlace reciba el foco mediante el teclado, debe mostrar un contorno visible.*/
 
 /* E. PSEUDOELEMENTOS */
