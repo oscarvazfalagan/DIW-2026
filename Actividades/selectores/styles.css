@@ -86,23 +86,37 @@ li:last-child {
   border-bottom: solid black 10px;
 }
 /* 18. :nth-child(2): aplica un fondo diferente al segundo elemento de la lista (article) de noticias. */
-article.noticias:nth-child(2) {
-  background-color: aqua;
+#noticias article:nth-child(2) {
+  background-color: rgb(35, 243, 16);
 }
 /* 19. :not(.destacado): aplica un borde a todos los ciclos que no tengan la clase destacado.*/
-.destacado {
-  border: solid;
+.ciclo:not(.destacado) {
+  border: solid yellow 20px;
 }
 /* 20. :focus: cuando un enlace reciba el foco mediante el teclado, debe mostrar un contorno visible.*/
-
+a:focus {
+  outline: solid red 30px;
+}
 /* E. PSEUDOELEMENTOS */
 
 /* 21. ::before: añade un símbolo decorativo antes del texto de cada título h2.*/
-
+h2::before {
+  content: " * ";
+}
 /* 22. ::after: añade un texto - Más información después de los títulos h3 de los ciclos.*/
-
+h3::after {
+  content: " Hola ";
+}
 /* 23. ::first-letter: aumenta el tamaño de la primera letra de los párrafos de las noticias.*/
-
+#noticias p::first-letter {
+  font-size: 50px;
+}
 /* 24. ::first-line: muestra en negrita la primera línea de los párrafos de la sección de noticias.*/
-
+#noticias p::first-line {
+  font-weight: bold;
+}
 /* 25. ::selection: establece un fondo azul y texto blanco cuando el usuario seleccione texto de la página.*/
+*::selection {
+  background-color: blue;
+  color: white;
+}
