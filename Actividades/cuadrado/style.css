@@ -1,0 +1,48 @@
+.padreDelPadre {
+  background-color: rgb(202, 202, 201);
+  height: 600px;
+  width: 600px;
+  border: solid black 1px;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+}
+
+.padre {
+  position: absolute;
+  background-color: blanchedalmond;
+  height: 300px;
+  width: 300px;
+  border: solid black 1px;
+  top: 150px;
+  right: 150px;
+}
+
+.hijoRosa {
+  position: absolute;
+  background-color: rgb(214, 46, 164);
+  height: 150px;
+  width: 150px;
+  border: solid black 1px;
+  top: 75px;
+  right: 75px;
+}
+
+.hijoAzul1 {
+  position: absolute;
+  background-color: rgb(34, 37, 214);
+  height: 150px;
+  width: 150px;
+  border: solid black 1px;
+  top: 0px;
+}
+
+.hijoAzul2 {
+  position: absolute;
+  background-color: rgb(34, 37, 214);
+  height: 150px;
+  width: 150px;
+  border: solid black 1px;
+  bottom: 0px;
+  right: 0px;
+}
